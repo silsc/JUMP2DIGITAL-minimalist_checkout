@@ -1,0 +1,65 @@
+@import '../../sass/main';
+
+.product-container {
+  padding: 5% 10% 10% 5%;
+  width: 52%;
+  margin: 0;
+  @include respond("phone") {  
+    width: 100%;
+    padding: 10% 10% 0% 10%;
+  }
+  .back-container {
+    padding: 0% 0% 4% 16%;
+    display: flex;
+    align-items: center;
+    @include respond("phone") {  
+      padding: 0% 0% 18% 0%;
+    }
+    .back-arrow {
+      color: $icon-gray;
+    }
+    .back-btn {
+      text-decoration: none;
+      align-self: center;
+      padding-left: 2%;
+      color: $text-dark;
+      font: 500 14px $main-font;
+    }
+  }
+  .product-info-container {
+    @include respond("phone") {  
+      display: flex;
+      flex-direction: column;
+    }
+    .product-info {
+      padding-left: 22%;
+      @include respond("phone") { 
+        padding-left: 0%;
+        text-align: center; 
+        order: 2;
+      }
+      .product-name {
+        color: $text-gray;
+        font: 500 16px $main-font;
+        margin-bottom: 0;
+        padding-bottom: 3%;
+        @include respond("phone") {  
+          margin-top: 10%;
+        }
+      }
+      .product-price {
+        margin-top: 0;
+        color: $text-dark;
+        font: 900 36px $main-font;
+      }
+    }
+    .product-img {
+      width: 100%;
+      @include respond("phone") {
+        align-self: center;  
+        width: 60%;
+        order: 1;
+      }
+  }
+  }
+}

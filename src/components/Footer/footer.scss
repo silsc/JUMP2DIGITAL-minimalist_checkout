@@ -1,0 +1,63 @@
+@import '../../sass/main';
+
+.footer {
+  display: flex;
+  position: absolute;
+  left: 9vw;
+  bottom: 5%;
+  align-items: center;
+  color: $icon-gray;
+  font: 500 16px $main-font;
+  letter-spacing: 0.015em;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  @include respond("phone") { 
+    padding: 0 0 10% 0; 
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+  .redsys-container {
+    text-align: center;
+    display: flex;
+    padding: 1%;
+    padding-right: 5%;
+    p {
+      width: 100%;
+      white-space: nowrap
+    }
+    .redsys-logo {
+      object-fit: contain;
+      width: 65px;
+      margin-left: 1%;
+      @include respond("phone") {  
+        border-left: none;
+        padding: 0;
+      }
+    }
+  }
+  .footer-links {
+    border-left: 2px solid $icon-gray;
+    padding: 0.5% 1%;
+    justify-self: center;
+    @include respond("phone") {  
+      border-left: none;
+      padding: 0;
+    }
+    .footer-link {
+      color: $icon-gray;
+      margin: 0 10%;
+      text-decoration: none;
+      &:nth-child(2) {
+        @include respond("phone") {  
+          margin-left: 10%;
+        }
+      }
+      @include respond("phone") {  
+        margin: 0;
+      }
+    }
+  }
+}

@@ -1,24 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Product from './components/Product/Product';
+import Checkout from './components/Checkout/Checkout';
+import Footer from './components/Footer/Footer';
 
-function App() {
+function App( props ) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="section-container">
+      <Product name="New Mac" price={props.price}/>
+      <Checkout price={props.price}/>
+      <Footer></Footer>
+    </section>
   );
 }
 
