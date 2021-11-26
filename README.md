@@ -19,6 +19,10 @@ The form validation system was built with the use of [Formik](https://formik.org
 
 This app is divided in 2 big components, the product component (where the product information and picture is displayed) and the checkout component (where the checkout form can be found). Inside of the checkout component two other components are imported: the countries component (that retrieves the countries list from the API) and the Checkout Form component where the Form using the Formik library can be found.
 
+## Deployment
+
+This app was deployed through Netlify and the live version can be found [here](https://frontend-hackaton-silsc.netlify.app/)
+
 ## License
 All of the design files where provided by [NUWE](https://nuwe.io/challenge/jump2digital-front).
 
